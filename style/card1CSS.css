@@ -1,0 +1,1354 @@
+
+@charset "utf-8";
+
+
+body {
+    font-size: 14px;
+    font-family: system,-apple-system,BlinkMacSystemFont,'Segoe UI','Segoe WP',Roboto,Ubuntu,Oxygen,Cantarell,'Fira Sans','Helvetica Neue',Helvetica,'Lucida Grande','Droid Sans',Tahoma,'Microsoft Sans Serif',sans-serif;
+    margin:0;
+}
+
+.header-m {
+    display: none;
+   
+}
+
+.header {
+    background-color: rgb(72, 17, 115);
+    min-width: 978px;
+    max-width: 1500px;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+   position: relative;
+    
+    
+}
+
+.header-item {
+       
+    position: absolute;
+    top: -150%;
+    left:-7%;
+    width: 80%;
+    height: 350%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #b811a1, #671176);
+   
+    
+}
+
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 15px;
+    padding:0;
+    position: relative;
+    
+}
+.header-top li {
+    list-style: none;
+  
+   display: block;
+}
+.header-top li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.header-top li a:hover {
+    opacity:1;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 97%;
+    height: auto;
+    position: relative;
+}
+
+.logo-right {
+    
+    
+    list-style: none;
+    margin: 0;
+}
+.logo-right li {
+    padding: 25px 5px 0px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.logo-right li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+   
+   
+}
+
+.logo-right li a h4 {
+    position: relative;
+   margin-bottom:0;
+   
+}
+
+.logo-right li a h4::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: -40px;
+    left: 0;
+   
+}
+.logo-right li:first-child a h4::before {
+    background: url('../galery/adrtes-img.png') no-repeat center center;
+}
+.logo-right li:nth-child(2) a h4::before {
+    background: url('../galery/vhod-img.png') no-repeat center center;
+}
+.logo-right li:last-child a h4::before {
+    background: url('../galery/korsina-img.png') no-repeat center center;
+}
+
+.search {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    
+    
+}
+.search input {
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 98%;
+    margin: 5px 5px 10px 10px;
+    font-size: 18px;
+    padding: 10px 0px 10px 20px;;
+    border:none;
+    border-radius: 4px;
+    color: white;
+    opacity: 0.6;
+    transition-property: color, opacity, background-color;
+    transition-duration: 500ms;
+
+}
+.search input:hover {
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+}
+
+.btnsrch::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top:15px;
+    right:20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.btnsrch::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 9px;
+    background-color:#000;
+    top: 28px;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.topmenus {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: 0px auto;
+    padding:0;
+}
+.topmenus li {
+    list-style: none;
+    line-height: 1.5em;
+    position: relative;
+    padding-top: 10px;
+}
+.topmenus li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 15px 0px;
+    margin: 0 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+}
+.topmenus li a:hover {
+    color: #cb11ab;
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
+
+}
+
+
+/*основное меню*/
+main {
+    position: relative;
+    top: -10px;
+    min-width: 978px;
+    max-width: 1500px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    box-sizing: border-box;
+    z-index: 20;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*кнопка назад*/
+.backward {
+    text-align: start;
+    width: 100%;
+}
+.backward button {
+    margin:  2% 80% 0% 2%;
+    background-color: #fff;
+    border:0.8px solid rgb(213, 213, 213);
+    border-radius: 4px;
+    padding: 7px 16px 8px;
+    
+}
+.backward a {
+    display: inline-block;
+    margin: 2% 0 0 0;
+    padding:0;
+}
+.backward a img {
+    width: 90%;
+    height: 90%;
+    margin:0;
+}
+
+/*основной контент*/
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: auto;
+    min-height: 513px;
+    margin: 30px auto 8px;
+
+}
+
+
+/*левая колонка*/
+.left-content {
+    height: 453px;
+    width: 9%;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.prev,
+.next { 
+    display: inline-block;
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    margin: 0;
+}
+.prev {transform: rotate(-90deg);}
+.next {transform: rotate(90deg);}
+
+.left-content img {
+    height: 96px;
+    max-width: 76px;
+  
+  
+}
+
+
+
+.leftPage1a,
+.leftPage2a,
+.leftPage3a {
+    display: block;
+    margin:0px; 
+    padding: 0px;
+    border: 2px solid transparent;
+    box-sizing: content-box;
+
+}
+.left-content a:hover,
+.left-content a:active {
+    border: 2px solid #ff579d;
+    box-sizing: content-box;
+    border-radius: 3px;
+    margin: 0;
+    padding:0;
+   
+    
+}
+.leftBord {
+    border: 2px solid #ff579d;
+    box-sizing: content-box;
+    border-radius: 3px;
+    margin: 0;
+    padding:0;
+}
+
+
+
+/*центральный блок*/
+.center-content {
+    height: 453px;
+    width: 35%;
+   overflow: hidden;
+    
+}
+
+.big-photo {
+   width: 100%;
+   height: 100%;
+  
+    position: relative;
+}
+.big-photo {padding: 0; margin:0;}
+.img-1 {
+    
+   
+   height: 453px;
+   
+}
+.img-2 {
+    position: absolute;
+    width: 1020px;
+    opacity:0;
+    top:0;
+    left:0;
+    transition-property: opacity;
+    transition-duration: 800ms;
+}
+.img-2:hover {
+    opacity:1;
+}
+
+
+
+/*правый контент*/
+.right-content {
+    height: auto;
+    width: 56%;
+    color: #000;
+    padding-left: 30px;
+    text-align: start;
+    
+}
+.right-content h3 {
+    font-size:25px;
+    margin: 0px 0 10px;
+    text-align: start;
+}
+
+.right-content-top a {
+    display: inline-block;
+    
+    margin-left: 20px;
+    color: #000;
+}
+.right-content-top r {
+    color: #8b8b8b;
+    margin-left: 20px;
+}
+.order-block {
+    width: 70%;
+    height: 40px;
+    background-color: rgb(246, 246, 246);
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
+.order-block span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff579d;
+}
+
+.colorp {
+    margin: 20px 0;
+    color: rgb(139, 139, 139);
+    font-size: 14px;
+
+}
+.right-content p span {
+    color: #000;
+}
+.slaider1 { 
+    width:100%;
+    padding:0;
+    display: block;
+    
+    
+}
+.slaider1 li  {
+    
+    list-style: none;
+   
+    height: 96px;
+    
+    margin: 5px 0px;
+    
+    padding:0;
+    box-sizing: content-box;
+}
+/* .slaider1 li:hover,
+.slaider1 li:active {
+   
+    border-color: #ff579d;
+} */
+
+.slaider1 li a img {
+    border: 2px solid transparent;
+   height:100%;
+}
+.slaider1 li a img:hover,
+.slaider1 li a img:active {
+    border-color: #ff579d;
+} 
+
+.table-text {
+    color: black;
+    border-bottom: 1px dotted #000;
+    display: inline;
+    
+}
+
+/*кнопки размеры*/
+.size-all { 
+    margin-top:10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+    height: 70px;
+}
+.size-all input{
+    display: none;
+   
+}
+
+.size-all label {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: 2px solid #d5d5d5;
+    border-radius: 4px;
+    height: 40px;
+    
+    box-sizing: border-box;
+}
+
+.size-all label:hover,
+.size-all input:checked + label{
+  
+   border:2px solid #ff579d;
+   
+}
+
+/*корзина*/
+.basket a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px 71px ;
+    margin: 20px 0;
+    background-color:#ff773c;
+}
+
+/*регион и доставка*/
+.local {
+    margin: 20px 0 0 0;
+    color: #8b8b8b;
+}
+.local span {
+    margin-left: 20px;
+}
+.cond-price {
+    
+    color: #8b8b8b;
+    margin: 0 0 20px 0;
+}
+.cond-price span {
+    margin-left: 35px;
+}
+
+
+/*история*/
+.story {
+    margin: 10px auto;
+    width: 97%;
+    text-align: start;
+}
+.story h3 {font-size: 20px;}
+
+/*таблица с описанием*/
+.table { margin-top: 40px;}
+.table tr td:first-child {
+     color: #8b8b8b;
+     padding-right: 70px;
+    padding-top: 10px;
+}
+
+
+.show {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.show a {
+    color: #000;
+}
+.show p { font-size: 12px; color: #8b8b8b;}
+
+.i-tags-group ul { 
+    padding:0 50px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.i-tags-group li {
+    padding: 5px 30px 5px 10px;
+    border-radius: 1em/50%;
+    list-style: none;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    transition-property: background-color;
+    transition-duration: .5s;
+    
+}
+.i-tags-group li:hover {
+    background-color: #d5d5d5;
+}
+.i-tags-group li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*похожие товары*/
+.similar-goods{ 
+    width: 100%;
+    overflow: hidden;
+}
+.similar-goods h2 {
+    margin: 30px 0;
+}
+
+/*карточка*/
+.standart-carusel-block1-m {display: none;}
+.standart-carusel-block1,
+.standart-carusel-block2  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+   
+   
+}
+.standart-carusel-block1 li,
+.standart-carusel-block2 li {
+    list-style: none;
+}
+
+.standart-carusel-block1 li a,
+.standart-carusel-block2 li a {
+    text-decoration: none;
+}
+.standart-carusel-block1 li img,
+.standart-carusel-block2 li img {
+    width: 90%;
+    
+    
+}
+
+.newPrice { 
+    color: #ff579d;
+    margin: 2px 0;
+}
+.price {
+    color: #484848;
+    text-decoration: line-through;
+    margin:0;
+}
+.brand {
+    color: #000;
+    margin: 0;
+}
+.transcript {
+    
+    text-align: center;
+    color: #8b8b8b;
+    margin: 0px 0;
+}
+
+/*твое Футболка*/
+
+.brand-name h2 {
+    font-weight: normal;
+}
+.brand-item { 
+    width: 100%;
+    
+    display: block;
+    flex-direction: flex-start;
+}
+.brand-left {
+    display: flex;
+    background-color: #f6f6f6;
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+.brand-left-left {
+    width: 50%;
+}
+.brand-left-left h6 {
+    font-size: 55px;
+    margin:0 0 0 -40px;
+    
+    text-align: center;
+    font-weight: normal;
+}
+.brand-left-left img {
+    width: 70%;
+    margin-bottom: 15px;
+}
+.brand-left-left p {
+    margin:0;
+    color:#8b8b8b;
+}
+.brand-left-right { width: 50%;}
+.brand-left-right img {
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+/*правая часть*/
+.brand-right {
+    width: 70%;
+}
+.brand-right img {
+    width: 100%;
+}
+
+
+/*отзывы вопросы*/
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.tabs ul { 
+    padding:0;
+    list-style: none;
+
+}
+.tabsLiclr {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.tabsclr { 
+ 
+    text-decoration: none;
+    color: #8b8b8b;
+    padding-bottom: 15px;
+}
+
+
+.jShow { 
+     border-bottom: 2px solid #ff48a5;
+    color: #000;        
+}
+
+.tabs > a {
+    display:inline-block;
+    color: #000;
+    text-decoration-color: #8d8d8d;
+    margin-top:12px;
+    
+}
+
+
+/*написать отзыв*/
+
+.bott { 
+    margin: 50px 0;
+    width: 100%;}
+
+.bott bottom {
+    background-color: rgb(255, 119, 60);
+    color: white;
+    height: 40px;
+    font-size: 1rem;
+    padding: 10px 35px 11px;
+    border-radius: 4px;
+}
+
+/*фотографии покупателей*/
+
+.photoCustomerItem {
+    width: 100%;
+    padding:0;
+    display: flex;
+    overflow: hidden;
+}
+.photoCustomer li {
+    width: 90%;
+    
+   
+    list-style: none;
+    
+}
+
+/*сортировка*/
+.sorting { margin-top: 50px;}
+.sorting b {
+    font-weight: 400;
+    color: #8b8b8b;
+}
+.clr { 
+    margin-left: 15px;
+    border-bottom: 1px dotted black;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.txtred {
+    color: #ff48a5;
+    border-color: #ff48a5;
+}
+
+
+.sorting input {display:none;}
+.sorting label { 
+    position:relative;
+    margin-left: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.sorting label::before {
+    position:absolute;
+    content: "";
+    top: 0px;
+    left: -20px;
+    width: 16px;
+    height: 16px;
+    border: 1px dotted black;
+}
+
+.sorting input:checked + label::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -14px;
+    width: 4px;
+    height: 8px;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    transform: rotate(45deg);
+}
+
+
+
+/*отзывы*/
+
+.review {
+   border-top: 1px solid #e8e8e8;
+    margin: 30px auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/*фото*/
+.photoName { margin-right: 30px;}
+
+/*описание*/
+.reviewName a {
+    color: #000;
+}
+.reviewName span {
+    margin-left: 20px;
+    color: #8b8b8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.reviewStars {
+    color: #8b8b8b;
+}
+.reviewStars img { margin-right: 20px;}
+
+.reviewStars span {
+    color: #000;
+    margin-right: 20px;
+}
+
+.reviewStars span i { 
+    font-style: normal;
+    color:#ff579d;
+}
+
+/*жалоба отзыва*/
+.complainte {
+    float: right;
+    color: #8b8b8b;
+    font-size: 14px;
+}
+.complainteReview { 
+    margin-right: 20px;
+    color: #000;
+ 
+}
+.yes,
+.no { 
+    margin-left:10px;
+    text-decoration: none; 
+}
+.yes img,
+.no img {
+   display: inline-block;
+   margin-bottom: -5px;
+   margin-right: 3px;
+    height: 18px;
+}
+.no img { transform: scale(1, -1)}
+
+
+
+
+
+
+/*footer*/
+footer {
+    background: #f0f0f0;
+    width: 100%;
+    
+    padding-bottom: 27px;
+    position: relative;
+}
+
+/*линия 1*/
+.footerLine1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 97%;
+
+}
+
+.footerColumn {
+    margin-top: 30px;
+    
+
+}
+
+.footerColumn  a {
+    color: #848484;
+    font-size: 12px;
+    line-height: 2.1;
+    text-decoration: none;
+
+}
+.footerColumn a h3 {
+    font-weight: 400;
+    color: #272727;
+    font-size: 15px;
+}
+
+.footerColumn2,
+.footerColumn3,
+.footerColumn4 {
+    padding-left: 20px;
+}
+.footerColumn1 {
+    margin-top: 55px;
+}
+
+ .footerColumn1,
+.footerColumn4 {
+  
+     width: 17%;
+     list-style: none;
+    
+ }
+.footerColumn1 li a img { width: 100%;}
+
+.footerColumn2ul,
+.footerColumn3ul {
+    display: flex;
+   
+   
+}
+
+
+ .footerColumn2,
+ .footerColumn3 {
+   
+     width: 33%;
+    
+ }
+
+ .footerColumn2Right,
+ .footerColumn3Right {
+     margin-left: 20px;
+ }
+
+ .footerColumn2Right,
+ .footerColumn3Right, 
+  .footerColumn2Left,
+  .footerColumn3Left,
+  .footerColumn4Left {
+     list-style: none;
+     margin-top:0;
+     padding:0;
+   
+ } 
+
+/*4 колонка*/
+.footerColumn4Left li  a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    list-style: none;
+    background: url('../galery/icons_sprite.svg') 0 0/128px 296px no-repeat;
+    
+    
+}
+.footerColumn4Left li:first-child  a {
+    background-position: -85px -43px;
+}
+.footerColumn4Left li:nth-child(2)  a {
+    background-position: -1px -1px;
+}
+.footerColumn4Left li:nth-child(3)  a {
+    background-position: -43px -1px;
+}
+.footerColumn4Left li:nth-child(4)  a {
+    background-position: -85px -1px;
+}
+.footerColumn4Left li:last-child  a {
+    background-position: -1px -85px;
+}
+
+.footerColumn4Left li {
+    display: inline-block;
+    position: relative;
+}
+
+
+/*2 линия*/
+
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.line2 li {
+width: 16%;
+height: 32px;
+list-style: none;
+
+}
+
+
+.line2 li:first-child a {
+    display: inline-block;
+    background: url("../galery/line21.png") no-repeat;
+    background-size: 70%;
+    width: 100%;
+    height: 100%;    
+    
+}
+
+.line2 li:nth-child(2) a {
+    display: inline-block;
+    background: url("../galery/line22.png") no-repeat ;
+    background-size: 70%;
+    width: 100%;
+    height: 100%; 
+}
+.line2 li:nth-child(3) a {
+    display: inline-block;
+    background: url("../galery/line23.png") no-repeat ;
+    background-size: 72%;
+    margin-top: 1%;
+    width: 100%;
+    height: 100%; 
+}
+.line2 li:nth-child(4) a {
+    display: inline-block;
+    background: url("../galery/line24.png") no-repeat ;
+    background-size: 72%;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%; 
+}
+.line2 li:nth-child(5) a {
+    display: inline-block;
+    background: url("../galery/line25.png") no-repeat ;
+    background-size: 72%;
+    margin-top: 0%;
+    width: 100%;
+    height: 100%; 
+}
+.line2 li:nth-child(6) a {
+    display: inline-block;
+    background: url("../galery/line26.png") no-repeat ;
+    background-size: 72%;
+    margin-top: 2%;
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+/*3 line*/
+
+.line3 {
+   display: block;
+    background: url('../galery/all-futer.png') no-repeat;
+    width: 97%;
+    margin:30px auto;
+    height: 200px;
+    background-size: 100%;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 415px) {
+    
+    body {
+        font-size: 10px;
+    }
+
+    .header {
+        display: none;
+    }
+    .header-m {
+        display: block;
+        background-color: #810c72;
+        min-width: 278px;
+        
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+    }
+     
+    .header-top-m {
+        display: none;
+    }
+
+
+
+    .logo-left  a img {
+        display: inline-block;
+      
+        height: 50%;
+        margin-top: 1%;;
+        
+
+    }
+    
+
+    .logo-left  {
+        
+       
+        text-align: center;
+        
+    }
+
+    .header-top-m-open {
+        top: 20px;
+       
+    }
+    .header-top-m-open::before,
+    .header-top-m-open::after,
+    .header-top-m-open {
+        content: "";
+        position: absolute;
+        border-radius: 20%;
+        left:0;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+
+    }
+    .header-top-m-open::before {
+        top: -6px;
+    }
+
+    .header-top-m-open::after {
+        top: 6px;
+        
+    }
+
+    .logo-right {
+        display: none;
+    }
+
+
+
+
+    main {
+        width: 100%;
+        margin:0;
+        min-width: 278px;
+        max-width: 550px;
+        border: 1px dotted #05664a;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .backward button {
+        display: inline-block;
+        padding: 2px 8px 4px; 
+        border: 1px solid green;
+
+    }
+    .backward a {
+       display: none;
+    }
+
+
+
+    /*основной контент*/
+    
+
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+
+    .left-content {
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+    .prev {transform: rotate(-180deg);}
+    .next {transform: rotate(0deg);}
+
+    .center-content {
+        width: 100%;
+
+    }
+    .img-2 {
+        display: none;
+    }
+
+
+    /*Правый контент*/
+    .right-content {
+        width: 100%;
+        padding: 0;
+    }
+    .right-content h3 {
+        font-size:15px;
+        margin: 10px 0;
+    }
+
+    .slaider1 {
+        width:100%;
+        padding:0;
+        
+    }
+    .slaider1 li {
+        min-height: 45px;
+        height: auto;
+        margin:0 10px;
+    }
+    .slaider1 li:hover,
+    .slaider1 li:active {
+        height: auto;
+    }
+    .size-all {
+        width: 80%;
+    }
+    .size-all label {
+        height: 30px;
+        
+        padding: 5px 10px;
+    }
+
+
+    /*корзина*/
+    .basket {text-align: center;}
+
+
+    /*с этим товаром искали*/
+    .i-tags-group ul,
+    .i-tags-group li  {
+        padding: 5%;
+        margin: 0;
+    }
+    .i-tags-group li:active {
+        background-color: #d5d5d5;
+    }
+
+    /* .standart-carusel-block1 {
+        display: none;
+    } */
+
+    .standart-carusel-block1 li,
+    .standart-carusel-block2 li {
+        box-sizing: border-box;
+    width: 20%;
+    
+}
+    .standart-carusel-block1-m {
+        display: block;
+        width: 100%;
+    }
+
+    .price { display: none;}
+
+    /*футболка*/
+    .brand-item {
+        flex-wrap: wrap;
+    }
+    .brand-left {
+        width: 100%;
+    }
+    .brand-right {
+        width: 100%;
+    }
+
+
+    /*фотографии покупателей*/
+
+    .photoCustomerItem li a img {
+        width: 100%;
+    }
+
+
+    /*footer*/
+
+    footer { padding-bottom: 10px;}
+
+
+    .footerColumn1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .footerColumn a h3 {
+        font-size: 12px;
+    }
+    
+    .footerLine1 {
+        flex-wrap: wrap;
+    }
+
+    .footerColumn2Right,
+    .footerColumn3Right {
+        margin: 5px;
+    }
+
+    .footerColumn2Right li,
+ .footerColumn3Right li, 
+  .footerColumn2Left li,
+  .footerColumn3Left li,
+  .footerColumn4Leftli  {
+      line-height: 0;
+      padding-top: 2em;
+     
+  }
+  
+  .footerColumn2Right li a:hover,
+  .footerColumn3Right li a:hover, 
+   .footerColumn2Left li a:hover,
+   .footerColumn3Left li a:hover,
+   .footerColumn4Leftli a {
+              
+       border-bottom: 1px solid black;
+   }
+
+   .footerColumn4 {
+       width: 100%;
+       padding: 0;
+       margin-top: 10px;
+     
+   }
+   .footerColumn4Left {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+
+
+   .footerColumn4 a {
+       display: none;
+   }
+
+
+
+   .line-2 {
+       flex-wrap: wrap;
+       margin-top: 10px;
+   }
+
+   .line3 {
+     margin:0;
+     height: 50px;
+   }
+}
